@@ -1,94 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Ali Arafat</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        a {
+            color: #77aaff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #555;
+        }
+
+        /* Sticky Navigation Bar */
+        #nav {
+            background: #444;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        #nav ul li {
+            margin: 0 15px;
+        }
+
+        #nav ul li a {
+            color: #fff;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        #nav ul li a:hover {
+            color: #77aaff;
+        }
+
+        /* Sections */
+        section {
+            background: #fff;
+            padding: 80px 20px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            scroll-margin-top: 60px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 10px;
+        }
+
+        .job, .project {
+            margin-bottom: 20px;
+        }
+
+        .job h3, .project h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .job p, .project p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .job ul, .project ul {
+            padding-left: 20px;
+        }
+
+        .job ul li, .project ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+    </style>
 </head>
 <body class="is-preload">
-    <section id="header">
-        <header>
-            <span class="image avatar"><img src="images/profilepicfornow.jpg" alt="" /></span>
-            <h1 id="logo"><a href="#">Ali Arafat</a></h1>
-            <p>Passionate about uncovering insights through data and turning numbers into impactful decisions.⚡</p>
-        </header>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#experience" class="active">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </section>
+    <!-- Sticky Navigation Bar -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+    </nav>
 
-    <div id="wrapper">
-        <div id="main">
-            <section id="experience">
-                <div class="container">
-                    <h2>Relevant Experience</h2>
-                    <div class="job">
-                        <h3>Graduate Engineer Trainee (Python) | Absax Technologies Pvt Ltd</h3>
-                        <p><strong>July 2023 – Present</strong></p>
-                        <ul>
-                            <li>Developed an Energy Management System, improving energy efficiency by 22%.</li>
-                            <li>Integrated IoT devices for real-time factory monitoring and data analytics.</li>
-                            <li>Developed Smart Andon System for real-time production monitoring.</li>
-                            <li>Built Flask APIs for biometric security and smart factory solutions.</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <h3>Software Engineer Intern | Truminds Software Systems</h3>
-                        <p><strong>Jan 2022 – Feb 2022</strong></p>
-                        <ul>
-                            <li>Worked on telecom solutions using socket programming in C.</li>
-                            <li>Developed microservices using libmicrohttpd.h for scalable telecom systems.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects">
-                <div class="container">
-                    <h2>Top Projects</h2>
-                    <div class="project">
-                        <h3>Data Jobs Salary Dashboard</h3>
-                        <p>Created a dashboard to analyze data jobs salaries using Excel skills like charts, formulas, and data validation.</p>
-                    </div>
-                    <div class="project">
-                        <h3>Marketing Campaign Analysis</h3>
-                        <p>Analyzed Facebook vs. Google Ads conversion rates using Python, hypothesis testing, and regression modeling.</p>
-                    </div>
-                    <div class="project">
-                        <h3>Brain Tumor MRI Image Segmentation</h3>
-                        <p>Developed a deep learning model for MRI image segmentation and classification, published in ICSTSN 2023.</p>
-                    </div>
-                    <div class="project">
-                        <h3>Smart Factory Andon & Energy Management System</h3>
-                        <p>Designed an IoT-based smart factory monitoring system with real-time data analytics.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <aside id="sidebar">
-            <section id="contact">
-                <h3>Contact Information</h3>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Relevant Experience</h2>
+            <div class="job">
+                <h3>Graduate Engineer Trainee (Python) | Absax Technologies Pvt Ltd</h3>
+                <p><strong>July 2023 – Present</strong></p>
                 <ul>
-                    <li>📞 8700198702</li>
-                    <li>📧 <a href="mailto:aliarafat1000@gmail.com">aliarafat1000@gmail.com</a></li>
-                    <li>🌍 New Delhi, India</li>
-                    <li>🔗 <a href="https://www.linkedin.com/in/aliarafat1000" target="_blank">LinkedIn Profile</a></li>
+                    <li>Developed an Energy Management System, improving energy efficiency by 22%.</li>
+                    <li>Integrated IoT devices for real-time factory monitoring and data analytics.</li>
+                    <li>Developed Smart Andon System for real-time production monitoring.</li>
+                    <li>Built Flask APIs for biometric security and smart factory solutions.</li>
                 </ul>
-            </section>
-            <section id="education">
-                <h3>Education</h3>
-                <p><strong>SRM Institute of Science and Technology</strong><br>B.Tech in Computer Science Engineering (2023)<br>CGPA: 9.16</p>
-                <p><strong>Banyan Tree School</strong><br>Class 12 (2018): 93%<br>Class 10 (2016): 9.8 CGPA</p>
-            </section>
-        </aside>
+            </div>
+            <div class="job">
+                <h3>Software Engineer Intern | Truminds Software Systems</h3>
+                <p><strong>Jan 2022 – Feb 2022</strong></p>
+                <ul>
+                    <li>Worked on telecom solutions using socket programming in C.</li>
+                    <li>Developed microservices using libmicrohttpd.h for scalable telecom systems.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Sales Data Analysis Dashboard</h3>
+                <p>Developed a Power BI dashboard analyzing sales data to identify trends, customer segments, and revenue drivers.</p>
+                <ul>
+                    <li>Utilized SQL for data extraction and transformation.</li>
+                    <li>Implemented DAX calculations for performance metrics.</li>
+                    <li>Created interactive reports for business insights.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Automated Data Pipeline with Python</h3>
+                <p>Designed an ETL pipeline to automate data ingestion, transformation, and loading for analytics.</p>
+                <ul>
+                    <li>Used Pandas and NumPy for data cleaning and manipulation.</li>
+                    <li>Integrated API data sources with automation.</li>
+                    <li>Stored processed data in a PostgreSQL database.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Customer Churn Prediction Model</h3>
+                <p>Built a machine learning model to predict customer churn using historical data.</p>
+                <ul>
+                    <li>Applied logistic regression and decision trees.</li>
+                    <li>Optimized model performance using hyperparameter tuning.</li>
+                    <li>Visualized results with Matplotlib and Seaborn.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>SRM Institute of Science and Technology</strong><br>B.Tech in Computer Science Engineering (2023)<br>CGPA: 9.16</p>
+            <p><strong>Banyan Tree School</strong><br>Class 12 (2018): 93%<br>Class 10 (2016): 9.8 CGPA</p>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><i class="fas fa-phone"></i> 8700198702</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:aliarafat1000@gmail.com">aliarafat1000@gmail.com</a></li>
+                <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aliarafat1000" target="_blank">LinkedIn Profile</a></li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>
