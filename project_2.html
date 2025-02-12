@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ali Arafat - All Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<section id="header">
+			<header>
+				<h1 id="logo"><a href="index.html">Ali Arafat - All Projects</a></h1>
+				<p>Explore my projects categorized by skills.</p>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#python-eda">Python EDA</a></li>
+					<li><a href="#excel-dashboard">Excel Dashboards</a></li>
+					<li><a href="#sql">SQL</a></li>
+					<li><a href="#machine-learning">Machine Learning</a></li>
+					<li><a href="#power-bi">Power BI</a></li>
+					<li><a href="#end-to-end">End-to-End Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Python EDA Section -->
+			<section id="python-eda">
+				<div class="container">
+					<header class="major"><h2>Python EDA Projects</h2></header>
+					<div class="features">
+						<article>
+							<h4>EDA on Sales Data</h4>
+							<p>Exploratory Data Analysis on retail sales data to find trends.</p>
+						</article>
+						<article>
+							<h4>Customer Churn Analysis</h4>
+							<p>Analyzed customer churn factors using Python Pandas and Seaborn.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Excel Dashboards Section -->
+			<section id="excel-dashboard">
+				<div class="container">
+					<header class="major"><h2>Excel Dashboard Projects</h2></header>
+					<div class="features">
+						<article>
+							<h4>HR Analytics Dashboard</h4>
+							<p>Built an Excel dashboard to track HR analytics.</p>
+						</article>
+						<article>
+							<h4>Financial Reporting Dashboard</h4>
+							<p>Developed an Excel-based financial reporting system.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- SQL Section -->
+			<section id="sql">
+				<div class="container">
+					<header class="major"><h2>SQL Projects</h2></header>
+					<div class="features">
+						<article>
+							<h4>Employee Database Analysis</h4>
+							<p>Queried and analyzed company employee data using SQL.</p>
+						</article>
+						<article>
+							<h4>Sales Performance Querying</h4>
+							<p>Optimized SQL queries for sales performance insights.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Machine Learning Section -->
+			<section id="machine-learning">
+				<div class="container">
+					<header class="major"><h2>Machine Learning Projects</h2></header>
+					<div class="features">
+						<article>
+							<h4>House Price Prediction</h4>
+							<p>Built a regression model to predict house prices.</p>
+						</article>
+						<article>
+							<h4>Sentiment Analysis</h4>
+							<p>Developed a sentiment analysis model using NLP.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Power BI Section -->
+			<section id="power-bi">
+				<div class="container">
+					<header class="major"><h2>Power BI Projects</h2></header>
+					<div class="features">
+						<article>
+							<h4>Sales Dashboard</h4>
+							<p>Created an interactive sales dashboard in Power BI.</p>
+						</article>
+						<article>
+							<h4>Customer Retention Analysis</h4>
+							<p>Visualized customer retention trends using Power BI.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- End-to-End Projects Section -->
+			<section id="end-to-end">
+				<div class="container">
+					<header class="major"><h2>End-to-End Projects</h2></header>
+					<div class="features">
+						<article>
+							<h4>Retail Sales Analytics</h4>
+							<p>Developed an end-to-end analytics pipeline for retail sales.</p>
+						</article>
+						<article>
+							<h4>Automated Data Reporting System</h4>
+							<p>Created an automated data reporting solution integrating Python, SQL, and Power BI.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Section -->
+			<section id="contact">
+				<div class="container">
+					<h3>Contact Me</h3>
+					<p>Feel free to reach out for collaboration.</p>
+				</div>
+			</section>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#nav a').click(function(event) {
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: $($(this).attr('href')).offset().top
+					}, 500);
+				});
+			});
+		</script>
+	</body>
+</html>
